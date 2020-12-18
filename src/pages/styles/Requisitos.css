@@ -1,0 +1,19 @@
+.titulo.Requisitos{
+    /* color: #707070; */
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Castoro', serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.lista-contenedor{
+    display: flex;
+    justify-content: center;
+}
+.lista{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}

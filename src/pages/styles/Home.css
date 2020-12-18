@@ -1,0 +1,18 @@
+.titulos{
+    color: red;
+    font-family: 'Castoro', serif;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.texto{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #707070;
+    width: 85%;
+    margin-left: 9%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    font-weight: bold;
+}

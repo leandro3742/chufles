@@ -1,0 +1,93 @@
+.titulo-cedula{
+    font-size: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Castoro', serif;
+    text-decoration: underline;
+}
+
+.contenedor-input{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.input{
+    text-align: center;
+    outline: none;
+    width: 40%;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 10px 0 10px 0;
+}
+.contenedor-boton{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+/* .link{
+    border: outset;
+} */
+.ingresar{
+    outline: none;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 10px 0 10px 0;
+    border: outset;
+    background-color: #E1B8B8;
+}
+.ingresar:active{
+    border: inset;
+}
+.flechas{
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+.flecha.uno{
+    animation: uno 1s infinite;
+}
+.flecha.dos{
+    animation: dos 1s infinite;
+}
+.flecha.tres{
+    animation: tres 1s infinite;
+}
+@keyframes uno{
+    0%, 30%{
+        opacity: 1;
+    }
+    31%, 65%{
+        opacity: 0.5;
+    }
+    
+    66%, 100%{
+        opacity: 0.2;
+    }
+}
+@keyframes dos{
+    0%, 30%{
+        opacity: 0.2;
+    }
+    31%, 65%{
+        opacity: 1;
+    }
+    
+    66%, 100%{
+        opacity: 0.5;
+    }
+}
+@keyframes tres{
+    0%, 30%{
+        opacity: 0.2;
+    }
+    31%, 65%{
+        opacity: 0.2;
+    }
+    
+    66%, 100%{
+        opacity: 1;
+    }
+}

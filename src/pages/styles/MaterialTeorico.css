@@ -1,0 +1,36 @@
+.Material_Teorico{
+    display: grid;
+    justify-content: center;
+}
+.Titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: #707070;
+    text-decoration: underline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.Titulo.dos{
+    margin-top: 40px;
+}
+.container{
+    margin-left: 5%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedor{
+    margin-left: 15%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pdf{
+    margin-top: 25px;
+}
+.pdf.chico{
+    padding-left: 10px; 
+}

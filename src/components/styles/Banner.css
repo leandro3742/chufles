@@ -1,0 +1,75 @@
+
+.banner{
+    margin-top: 10px;
+    margin-left: calc(50% - 375px);
+    width: 750px;
+    height: 375px;
+    animation: banner 10s infinite;
+    border-radius: 10px;
+}
+
+@keyframes banner{
+    0%, 20%{
+        background-image: url("../img/grande(1).jpg");
+    }
+    25%, 45%{
+        background-image: url("../img/grande(2).jpg");
+        opacity: 1;
+    }
+    50%, 70%{
+        background-image: url("../img/grande(3).jpg");
+    }
+    75%, 95%{
+        background-image: url("../img/grande(4).jpg");
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .banner{
+        margin-left: calc(50% - 150px);
+        width: 300px;
+        height: 150px;
+    }
+
+    @keyframes banner{
+        0%, 20%{
+            background-image: url("../img/chico(1).jpg");
+        }
+        25%, 45%{
+            background-image: url("../img/chico(2).jpg");
+            opacity: 1;
+        }
+        50%, 70%{
+            background-image: url("../img/chico(3).jpg");
+        }
+        75%, 95%{
+            background-image: url("../img/chico(4).jpg");
+        }
+    }
+}
+
+@media only screen and (max-width: 749px) and (min-width: 351px) {
+    .banner{
+        margin-left: calc(50% - 175px);
+        width: 350px;
+        height: 175px;
+    }
+
+    @keyframes banner{
+        0%, 20%{
+            background-image: url("../img/mediano(1).jpg");
+        }
+        25%, 45%{
+            background-image: url("../img/mediano(2).jpg");
+            opacity: 1;
+        }
+        50%, 70%{
+            background-image: url("../img/mediano(3).jpg");
+        }
+        75%, 95%{
+            background-image: url("../img/mediano(4).jpg");
+        }
+    }
+}
+
+

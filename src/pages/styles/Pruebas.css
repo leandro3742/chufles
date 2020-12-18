@@ -1,0 +1,37 @@
+.pregunta{
+    margin-top: 50px;
+    font-family: 'Castoro', serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.respuestas-container{
+    margin-top: 25px;
+}
+.respuestas{
+    outline: none; /* Hace que el boton se vea bien*/
+    border-radius: 10px 5px 20px 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-size: 12px;
+    min-width: 0px;
+}
+
+.respuestas:hover{
+    background-color: aqua;
+}
+.respuestas:focus{
+    background-color: aqua;
+}
+.boton{
+    outline: none; /* Hace que el boton se vea bien*/
+    font-family: 'Castoro', serif;
+    margin-top: 25px;
+    margin-left: calc(50% - 50px);
+    width: 100px;
+    border-radius: 10px 5px 20px 5px;
+}
+.Footer{
+    margin-top: 42%;
+}
