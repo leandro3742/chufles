@@ -6,26 +6,19 @@ import { Link } from 'react-router-dom';
 import swal from 'sweetalert';
 let link = "Examenes";
 let array_de_respuestas = [];
-let respuestas_bien = 0;
+let respuestas_bien = -1;
 array_de_respuestas.length = 31;
 
-function guardar_respuesta(res, i){
-
-    if(res === respuestas_correctas[i]){ 
-        array_de_respuestas[i] = "Bien";
-        console.log("Correcto");
+export function comprobar(i, RESPUESTA){
+    
+    if(RESPUESTA === respuestas_correctas[i]){
         respuestas_bien++;
+        console.log("Bien");
     }
     else{
-        array_de_respuestas[i] = "Mal";
-        console.log("Mal");
+        console.log("MAL");
     }
-}
-
-export function comprobar(i){
-    // if(me_voy === true){
-    //     link = "Final";
-    // }
+    console.log("Respuestas bien: "+respuestas_bien);
     if(i === 29){
         if(respuestas_bien >= 1){
             swal({
@@ -54,7 +47,8 @@ export default class Pruebas extends React.Component {
           i: 0,
           boton: "Comprobar",
           me_voy: false,
-          respues : []
+          respues : [],
+          RESPUESTA : "",
         };
         this.state.respues.length = 31;
     }
@@ -76,12 +70,17 @@ export default class Pruebas extends React.Component {
                 <span className="pregunta">{preguntas[myArray[this.state.i]]}</span>
                 <div className="respuestas-container">
                     {/* <button onClick={this.avanzar}> {this.state.i}</button> */}
-                    <button onClick={()=>guardar_respuesta(respuestas[myArray[this.state.i]][2], this.state.i)} className="respuestas"> {respuestas[myArray[this.state.i]][2]} </button>
+                    <button onClick={()=>this.state.RESPUESTA = (respuestas[myArray[this.state.i]][2])} className="respuestas"> {respuestas[myArray[this.state.i]][2]} </button>
+                    <button onClick={()=>this.state.RESPUESTA = (respuestas[myArray[this.state.i]][1])} className="respuestas"> {respuestas[myArray[this.state.i]][1]} </button>
+                    <button onClick={()=>this.state.RESPUESTA =(respuestas[myArray[this.state.i]][0])} className="respuestas"> {respuestas[myArray[this.state.i]][0]} </button>
+                    <button onClick={()=>this.state.RESPUESTA = (respuestas[myArray[this.state.i]][3])} className="respuestas"> {respuestas[myArray[this.state.i]][3]} </button>
+
+                    {/* <button onClick={()=>guardar_respuesta(respuestas[myArray[this.state.i]][2], this.state.i)} className="respuestas"> {respuestas[myArray[this.state.i]][2]} </button>
                     <button onClick={()=>guardar_respuesta(respuestas[myArray[this.state.i]][1], this.state.i)} className="respuestas"> {respuestas[myArray[this.state.i]][1]} </button>
                     <button onClick={()=>guardar_respuesta(respuestas[myArray[this.state.i]][0], this.state.i)} className="respuestas"> {respuestas[myArray[this.state.i]][0]} </button>
-                    <button onClick={()=>guardar_respuesta(respuestas[myArray[this.state.i]][3], this.state.i)} className="respuestas"> {respuestas[myArray[this.state.i]][3]} </button>
+                    <button onClick={()=>guardar_respuesta(respuestas[myArray[this.state.i]][3], this.state.i)} className="respuestas"> {respuestas[myArray[this.state.i]][3]} </button> */}
                     
-                    <button onClick={this.avanzar} className="boton"><Link onClick={()=>comprobar(this.state.i)} to={link} > {this.state.boton} </Link></button>
+                    <button onClick={this.avanzar} className="boton"><Link onClick={()=>comprobar(this.state.i, this.state.RESPUESTA)} to={link} > {this.state.boton} </Link></button>
                 </div>
                 <Footer className="Footer"/>
             </div>     
