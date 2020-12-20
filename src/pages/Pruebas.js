@@ -9,7 +9,7 @@ let array_de_respuestas = [];
 let respuestas_bien = -1;
 array_de_respuestas.length = 31;
 
-export function comprobar(i, RESPUESTA){
+function comprobar(i, RESPUESTA){
     
     if(RESPUESTA === respuestas_correctas[i]){
         respuestas_bien++;

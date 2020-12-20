@@ -383,15 +383,15 @@ export const respuestas = [
 var indice_aleatorio = Math.floor(Math.random()*preguntas.length);
     const cantidad_de_preguntas = 31;
     var my_Array = [];
-    var respuestas_correctas = [];
-    respuestas_correctas.length = cantidad_de_preguntas;
+    var respuestas_bien = [];
+    respuestas_bien.length = cantidad_de_preguntas;
     my_Array.length = cantidad_de_preguntas;
     var numeros_repetidos = [];
     var i = 0;
     var j = 0;
     while(i < my_Array.length){
         indice_aleatorio = Math.floor(Math.random()*preguntas.length);
-        respuestas_correctas[i] = respuestas[indice_aleatorio][0];
+        respuestas_bien[i] = respuestas[indice_aleatorio][0];
         for (j in my_Array){
             // console.log('Entro?');
             if (my_Array[j] === indice_aleatorio){
@@ -410,5 +410,5 @@ var indice_aleatorio = Math.floor(Math.random()*preguntas.length);
         i++;
     }
     export var myArray = my_Array;
-    export var respuestas_correctas;
+    export var respuestas_correctas = respuestas_bien;
     // console.log(myArray);

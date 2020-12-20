@@ -1,5 +1,3 @@
-// import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import React from 'react';
 import './styles/MaterialTeorico.css';
 import Footer from '../components/Footer';
