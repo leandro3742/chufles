@@ -3,7 +3,6 @@ import './styles/MaterialTeorico.css';
 import Footer from '../components/Footer';
 import pdf from '../components/img/pdf.svg';
 
-
 export default class Home extends React.Component {
     render(){
         return(
@@ -48,12 +47,12 @@ export default class Home extends React.Component {
 
                         <a className="contenedor-pdf-2" href="http://76cbc9e5-db41-4cdd-97e0-0b11e50391a3.filesusr.com/ugd/6c62a1_b82bc87ea0884b12894255d390c056b5.pdf" alt="">
                             <img className="pdf" src={pdf} alt=""/>
-                            <span className="texto-pdf-2">Ley N° 190.061</span>
+                            <span className="texto-pdf-2">Regulación de circulacion vial</span>
                         </a>
 
                         <a className="contenedor-pdf-2" href="https://76cbc9e5-db41-4cdd-97e0-0b11e50391a3.filesusr.com/ugd/6c62a1_649ad3be92d848c2aa478a6046897ca2.pdf" alt="">
                             <img className="pdf" src={pdf} alt=""/> 
-                            <span className="texto-pdf-2">Señales de tránsito</span>
+                            <span className="texto-pdf-2">Ley de faltas</span>
                         </a>
 
                 </div>
