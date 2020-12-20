@@ -15,22 +15,45 @@
 .Titulo.dos{
     margin-top: 40px;
 }
-.container{
-    margin-left: 5%;
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+.container-pdf{
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: space-; */
 }
-.contenedor{
-    margin-left: 15%;
-    margin-top: 20px;
+
+.contenedor-pdf{
     display: grid;
+    margin-left: 10px;
+}
+
+.contenedor-pdf-2{
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.pdf{
+    margin-left: calc( 50% - 13.5px );    
+}
+.texto-pdf{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;  
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+}
+.texto-pdf-2{
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;  
+    font-size: 11px;
+    margin-top: 5px;
+    text-align: center;
+}
+.container-pdf-2{
+    display: grid;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
 }
 
-.pdf{
-    margin-top: 35px;
-}
-.pdf.chico{
-    padding-left: 10px; 
-}
