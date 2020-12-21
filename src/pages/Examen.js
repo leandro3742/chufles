@@ -21,7 +21,8 @@ const Leandro = new USUARIO(49189815, 'm', 'Leandro');
 const Arihana = new USUARIO(50379752, 'f', 'Arihana');
 
 const Marcos = new USUARIO(51196719, 'm', 'Marcos');
-const arreglo = [Maira, Leandro, Arihana, Marcos];
+const Maria = new USUARIO(43349996, 'f', 'Maria Julia')
+const arreglo = [Maira, Leandro, Arihana, Marcos, Maria];
 
 /*******************************************/
 
