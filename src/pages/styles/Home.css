@@ -21,18 +21,20 @@
     .contenedor-texto{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .subcontainer.tres{
-        display: grid;
-        justify-content: center;
-        /* grid-column: 3/4; */
-        grid-row: 2/3;
-    }
-    .titulos{
-        font-size: 20px;
     }
     .texto{
-        font-size: 18px;
+        text-align: center;
+    }
+    .subcontainer.tres{
+        margin-top: 25px;
+        margin-left: 25%;
+        grid-column: span 2;
+        width: 600px;
+    }
+    .titulos{
+        font-size: 24px;
+    }
+    .texto{
+        font-size: 20px;
     }
 }

@@ -11,6 +11,7 @@ export default class Home extends React.Component {
             <div className="home">
                <Banner /> 
                <div className="contenedor-texto">
+
                     <div className="subcontainer uno">
                         <span className="titulos">Quienes somos?</span>
                         <span className="texto">

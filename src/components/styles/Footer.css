@@ -1,5 +1,52 @@
 .Footer{
     margin-top: 50px;
+    /* margin-top: 25px; */
     display: flex;
     justify-content: center;
+}
+
+.wpp, .phone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos{
+    width: 24px;
+}
+
+.logos.phone{
+    margin-left: 15px;
+}
+
+.numero-wpp, .numero-phone{
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.linea{
+    color:#707070;
+    margin-top: 5px;
+    width: 75%;
+    height: 0px;
+    margin-left: 12.5%;
+    border: solid 1px;
+} 
+
+@media screen and (min-width: 500px){
+    .Footer{
+        margin-top: 100px;
+    }
+    .logos{
+        width: 32px;
+    }
+    .numero-wpp, .numero-phone{
+        font-size: 21px;
+    }
+    .logos.phone{
+        margin-left: 35px;
+    }
+    .linea{
+        margin-bottom: 5px;
+    }
 }

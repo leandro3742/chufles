@@ -19,7 +19,6 @@
 .container-pdf{
     margin-top: 30px;
     display: flex;
-    /* justify-content: space-; */
 }
 
 .contenedor-pdf{
@@ -57,3 +56,45 @@
     grid-template-columns: 1fr 1fr;
 }
 
+@media screen and (min-width: 500px){
+    .Titulo{
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-size: 28px;
+    }
+    .pdf{
+        width: 35px;
+    }
+    .texto-pdf, .texto-pdf-2{
+        font-size: 13px;
+    }
+    
+    .container-pdf{
+        margin-left: 100px;
+    }
+    .contenedor-pdf:hover{
+        color: red;
+    }
+    
+    .contenedor-pdf.uno{
+        margin-left: 0px;
+    }
+    .contenedor-pdf{
+        margin-left: 150px;
+        margin-bottom: 50px;
+    }
+    
+    /* Segundo piso */
+    
+    .container-pdf-2{
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contenedor-pdf-2.arriba{
+        margin-top: 50px;
+    }
+    .contenedor-pdf-2.abajo{
+        margin-top: 40px;
+    }
+}

@@ -91,3 +91,19 @@
         opacity: 1;
     }
 }
+
+@media screen and (min-width: 500px){
+    .titulo-cedula{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .contenedor-boton{
+        height: 30px;
+    }
+    .ingresar{
+        font-size: 15px;
+    }
+    .ingresar:hover{
+        background-color: #cf7f7f;
+    }
+}

@@ -32,6 +32,19 @@
     width: 100px;
     border-radius: 10px 5px 20px 5px;
 }
-.Footer{
-    margin-top: 42%;
+
+@media screen and (min-width: 500px){
+    .pregunta{
+        margin-top: 75px;
+        font-size: 24px;
+    }
+    .respuestas{
+        font-size: 18px;
+        height: 45px;
+    }
+    .boton{
+        margin-left: calc(50% - 80px);
+        width: 160px;
+        height: 35px;
+    }
 }
