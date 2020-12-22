@@ -20,7 +20,7 @@ export default class Home extends React.Component {
                             vehículos con toda la garantía y de ultima
                             generación. Nos encontramos en la ciudad
                             de Canelones, y llegamos hasta
-                            Santa Rosa, Cerrillos, Progreso, San Jacinto.
+                            Santa Rosa, Cerrillos, Progreso, San Antonio.
                         </span>
                     </div>
  
