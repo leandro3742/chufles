@@ -9,33 +9,12 @@ let link = "Examenes";
 let respuestas_bien = 0;
 
 function comprobar(i, RESPUESTA){
-
     if(RESPUESTA === respuestas_correctas[i]){
         respuestas_bien++;
         console.log("Bien");
     }
     else{
         console.log("MAL");
-    }
-    
-    if(i === 29){
-        if(respuestas_bien >= 26){
-            swal({
-                title : "Feliciataciones!!!" ,
-                text : "Aprobaste el examen" ,
-                buttons: "Cerrar",
-                icon : "success"
-            }) 
-        }
-        else{
-            
-            swal({
-                title : "Ops... " ,
-                text : "No has llegado al minimo necesario para aprobar" ,
-                buttons: "Cerrar",
-                icon : "error"
-            }) 
-        }
     }
 }
 
@@ -45,6 +24,7 @@ export default class Pruebas extends React.Component {
         super(props);
         this.state = {
           i: 0,
+          contador: 1,
           boton: "Comprobar",
           respues : [],
           RESPUESTA : "",
@@ -53,11 +33,37 @@ export default class Pruebas extends React.Component {
     }
     avanzar = () =>{
         this.setState({i : this.state.i+1});
+        this.setState({contador : this.state.contador+1});
         if(this.state.i === 28){
             this.setState({ 
                 boton : "Finalizar", 
             });
-        }  
+        } 
+        if(this.state.i === 29){
+            this.setState({contador : 30});
+            if(respuestas_bien >= 26){
+                swal({
+                    title : "Feliciataciones!!!" ,
+                    text : "Aprobaste el examen" ,
+                    buttons: "Cerrar",
+                    icon : "success"
+                }) 
+            }
+            else{
+                
+                swal({
+                    title : "Ops... " ,
+                    text : "No has llegado al minimo necesario para aprobar" ,
+                    buttons: "Cerrar",
+                    icon : "error"
+                }) 
+            }
+            this.setState({i : 0});
+            this.setState({contador : 1});
+            this.setState({boton : "Comprobar"});
+            this.setState({respues : []});
+            this.setState({RESPUESTA : ""});
+        }
     }
     
     render(){
@@ -72,6 +78,7 @@ export default class Pruebas extends React.Component {
                     <button onClick={()=>this.state.RESPUESTA = (respuestas[myArray[this.state.i]][3])} className="respuestas"> {respuestas[myArray[this.state.i]][3]} </button>
                     
                     <button onClick={this.avanzar} className="boton"><Link onClick={()=>comprobar(this.state.i, this.state.RESPUESTA)} to={link} > {this.state.boton} </Link></button>
+                    <h1>{this.state.contador}/30</h1>
                 </div>  
                 <Footer className="Footer"/>
             </div>     

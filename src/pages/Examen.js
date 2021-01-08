@@ -95,6 +95,7 @@ export default class Examen extends React.Component {
                     <img src={flecha} alt="" className="flecha dos" />
                     <img src={flecha} alt="" className="flecha tres" />
                 </div>
+
                 <Footer/>
             </div>
         );
