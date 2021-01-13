@@ -25,14 +25,18 @@ function respuesta_mal(respuestas_correctas){
     }) 
 }
 function comprobar(i, RESPUESTA){
+
     if(RESPUESTA === respuestas_correctas[i]){
+        if(i < 29){
         respuestas_bien++;
         console.log("Bien");
         correcto();
+        }
     }
     else{
         console.log("MAL");
-        respuesta_mal(respuestas_correctas[i]);
+        if(i< 29)
+            respuesta_mal(respuestas_correctas[i]);
     }
 }
 
@@ -50,6 +54,7 @@ export default class Pruebas extends React.Component {
         this.state.respues.length = 31;
     }
     avanzar = () =>{
+        comprobar(this.state.i, this.state.RESPUESTA);
         this.setState({i : this.state.i+1});
         this.setState({contador : this.state.contador+1});
         if(this.state.i === 28){
@@ -95,7 +100,8 @@ export default class Pruebas extends React.Component {
                     <button onClick={()=>this.state.RESPUESTA =(respuestas[myArray[this.state.i]][0])} className="respuestas"> {respuestas[myArray[this.state.i]][0]} </button>
                     <button onClick={()=>this.state.RESPUESTA = (respuestas[myArray[this.state.i]][3])} className="respuestas"> {respuestas[myArray[this.state.i]][3]} </button>
                     
-                    <button onClick={this.avanzar} className="boton"><Link onClick={()=>comprobar(this.state.i, this.state.RESPUESTA)} to={link} > {this.state.boton} </Link></button>
+                    <button onClick={this.avanzar} className="boton"><Link  to={link} > {this.state.boton} </Link></button>
+
                     <h1>{this.state.contador}/30</h1>
                 </div>  
                 <Footer className="Footer"/>
