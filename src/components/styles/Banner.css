@@ -4,23 +4,27 @@
     margin-left: calc(50% - 375px);
     width: 750px;
     height: 375px;
-    animation: banner 10s infinite;
+    animation: banner 20s infinite;
     border-radius: 10px;
 }
 
 @keyframes banner{
-    0%, 20%{
+    0%, 15%{
         background-image: url("../img/grande(1).jpg");
     }
-    25%, 45%{
+    20%, 35%{
         background-image: url("../img/grande(2).jpg");
         opacity: 1;
     }
-    50%, 70%{
+    40%, 55%{
         background-image: url("../img/grande(nuevo).jpg");
     }
-    75%, 95%{
+    60%, 75%{
         background-image: url("../img/grande(4).jpg");
+    }
+    80%, 95%{
+        background-image: url("../img/grande(mercadopago).jpg");
+
     }
 }
 
@@ -33,18 +37,21 @@
     }
 
     @keyframes banner{
-        0%, 20%{
+        0%, 15%{
             background-image: url("../img/chico(1).jpg");
         }
-        25%, 45%{
+        20%, 35%{
             background-image: url("../img/chico(2).jpg");
             opacity: 1;
         }
-        50%, 70%{
+        40%, 55%{
             background-image: url("../img/chico(nuevo).jpg");
         }
-        75%, 95%{
+        60%, 75%{
             background-image: url("../img/chico(4).jpg");
+        }
+        80%, 95%{
+            background-image: url("../img/chico(mercadopago).jpg");
         }
     }
 }
@@ -58,18 +65,21 @@
     }
 
     @keyframes banner{
-        0%, 20%{
+        0%, 15%{
             background-image: url("../img/mediano(1).jpg");
         }
-        25%, 45%{
+        20%, 35%{
             background-image: url("../img/mediano(2).jpg");
             opacity: 1;
         }
-        50%, 70%{
+        40%, 55%{
             background-image: url("../img/mediano(nuevo).jpg");
         }
-        75%, 95%{
+        60%, 75%{
             background-image: url("../img/mediano(4).jpg");
+        }
+        80%, 100%{
+            background-image: url("../img/mediano(mercadopago).jpg");
         }
     }
 }

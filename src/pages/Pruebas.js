@@ -8,13 +8,31 @@ import swal from 'sweetalert';
 let link = "Examenes";
 let respuestas_bien = 0;
 
+function correcto(){
+    swal({
+        title : "Correcto!!!" ,
+        buttons: "siguiente",
+        icon : "success"
+    }) 
+}
+
+function respuesta_mal(respuestas_correctas){
+    swal({
+        title : "Ops.. La respuesta correcta es: " ,
+        text : respuestas_correctas,
+        buttons: "Siguiente",
+        icon : "error"
+    }) 
+}
 function comprobar(i, RESPUESTA){
     if(RESPUESTA === respuestas_correctas[i]){
         respuestas_bien++;
         console.log("Bien");
+        correcto();
     }
     else{
         console.log("MAL");
+        respuesta_mal(respuestas_correctas[i]);
     }
 }
 
