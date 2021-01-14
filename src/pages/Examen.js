@@ -84,7 +84,7 @@ export default class Examen extends React.Component {
                         <Link onClick={()=>(comprobar(this.state.name))} to={()=>link} ><span className="comenzar">Comenzar</span></Link>
                     </button>
                 </div>
-                <span className="titulo-cedula">Si aún no está registrado contáctenos</span>
+                <span className="titulo-cedula">Si aún no estas registrado contáctenos</span>
                 <div className="flechas">
                     <img src={flecha} alt="" className="flecha uno" />
                     <img src={flecha} alt="" className="flecha dos" />
