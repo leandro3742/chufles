@@ -21,7 +21,7 @@ export default class Home extends React.Component {
                 </div>
                 
                 <span className="Titulo dos">
-                    Aqui puedes encontrar material<br />
+                    Aquí puedes encontrar material<br />
                     teórico para estudiar
                 </span>
                 <div className="container-pdf-2">

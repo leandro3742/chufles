@@ -32,14 +32,14 @@ export default class Home extends React.Component {
                             tomar, con un buen conocimiento del vehículo y
                             lo mismo en cuanto a reglamentación (claridad 
                             ante sus derechos y deberes), siempre desde 
-                            el marco de prevención deaccidentes.
+                            el marco de prevención de accidentes.
                         </span>
                     </div>
 
                     <div className="subcontainer tres">
                         <span className="titulos">Contamos con:  </span>
                         <span className="texto">
-                        -Practicas (Auto - Moto)
+                        -Prácticas (Auto - Moto)
                         -Aumento de categoría
                         -Clases teóricas (Auto - Moto)
                         Brindamos a nuestros clientes y

@@ -7,7 +7,13 @@ import swal from 'sweetalert';
 
 let link = "Examenes";
 let respuestas_bien = 0;
-
+// let a = 126;
+//Hasta la 125 esta todo ok
+// while(a <= 150){
+//     console.log(preguntas[a]);
+//     console.log(respuestas[a]);
+//     a++;
+// }
 function correcto(){
     swal({
         title : "Correcto!!!" ,

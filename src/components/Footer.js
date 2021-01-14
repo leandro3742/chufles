@@ -16,7 +16,7 @@ class Footer extends React.Component{
         
         <div className="phone">
             <img className="logos phone" src={phone} alt=""/>
-            <span className="numero-phone" >4332 20505</span>
+            <span className="numero-phone" >4332 0505</span>
         </div>
 
     </div>
