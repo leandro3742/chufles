@@ -33,6 +33,17 @@
     border: solid 1px;
 } 
 
+.container-copyright{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.copyright{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
 @media screen and (min-width: 500px){
     .Footer{
         margin-top: 100px;

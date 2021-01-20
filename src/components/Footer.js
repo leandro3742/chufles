@@ -9,10 +9,10 @@ class Footer extends React.Component{
     <React.Fragment>
     <div className="Footer">
 
-        <div className="wpp">
+        <a href="https://api.whatsapp.com/send?phone=59899402315" className="wpp">
             <img className="logos wpp" src={logo_wpp} alt=""/>
             <span className="numero-wpp">099402315</span>
-        </div>
+        </a>
         
         <div className="phone">
             <img className="logos phone" src={phone} alt=""/>
@@ -21,6 +21,9 @@ class Footer extends React.Component{
 
     </div>
     <div className="linea"></div>
+    <div className="container-copyright">
+        <a className="sin-decoracion" href="https://api.whatsapp.com/send?phone=59898361013"><span className="copyright">Copyright-2021 -LM Design</span></a>
+    </div>
     </React.Fragment>
     );
     }
