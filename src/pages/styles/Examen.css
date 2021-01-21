@@ -103,6 +103,12 @@
     .ingresar{
         font-size: 15px;
     }
+    .link-ingresar{
+        padding: 15px 75px 15px 75px;
+    }
+    .comenzar{
+        margin-left: -25px;
+    }
     .ingresar:hover{
         background-color: #cf7f7f;
     }

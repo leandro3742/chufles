@@ -82,7 +82,7 @@ export default class Examen extends React.Component {
                 </div>
                 <div className="contenedor-boton">
                     <button className="ingresar"> 
-                        <Link onClick={()=>(comprobar(this.state.name))} to={()=>link} ><span className="comenzar">Comenzar</span></Link>
+                        <Link className="link-ingresar" onClick={()=>(comprobar(this.state.name))} to={()=>link} ><span className="comenzar">Comenzar</span></Link>
                     </button>
                 </div>
                 <span className="titulo-cedula">Si aún no estas registrado contáctenos</span>
