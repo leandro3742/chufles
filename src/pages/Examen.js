@@ -23,8 +23,9 @@ const Arihana = new USUARIO(50379752, 'f', 'Arihana');
 const Renato = new USUARIO(41803380, 'm', 'Renato');
 const Claudio = new USUARIO(64170146, 'm', 'Claudio');
 const Sergio = new USUARIO(42020931, 'm', 'Sergio'); //Ingresado: 27/2/21
+const Natalia = new USUARIO(32992275, 'f', 'Natalia'); //Natalia Silva ingresada: 3/3/21
 
-const arreglo = [Maira, Leandro, Arihana, Renato, Claudio, Sergio];
+const arreglo = [Maira, Leandro, Arihana, Renato, Claudio, Sergio, Natalia];
 
 /*******************************************/
 
