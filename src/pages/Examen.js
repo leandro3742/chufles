@@ -20,12 +20,11 @@ const Maira = new USUARIO(26372734, 'f', 'Maira');
 const Leandro = new USUARIO(49189815, 'm', 'Leandro');
 const Arihana = new USUARIO(50379752, 'f', 'Arihana');
 
-const Renato = new USUARIO(41803380, 'm', 'Renato');
-const Claudio = new USUARIO(64170146, 'm', 'Claudio');
 const Sergio = new USUARIO(42020931, 'm', 'Sergio'); //Ingresado: 27/2/21
 const Natalia = new USUARIO(32992275, 'f', 'Natalia'); //Natalia Silva ingresada: 3/3/21
+const Yaquelin = new USUARIO(43969063, 'f', 'Yaquelin'); //Yaquelin Lisboa ingresada: 9/3/21
 
-const arreglo = [Maira, Leandro, Arihana, Renato, Claudio, Sergio, Natalia];
+const arreglo = [Maira, Leandro, Arihana, Sergio, Natalia, Yaquelin];
 
 /*******************************************/
 
