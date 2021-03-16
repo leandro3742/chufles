@@ -26,8 +26,9 @@ const Yaquelin = new USUARIO(43969063, 'f', 'Yaquelin'); //Yaquelin Lisboa ingre
 const Juan = new USUARIO(18850079, 'm', 'Juan'); //Juan Marcelo Diaz ingresado: 10/3/21
 const Asley = new USUARIO(64540941, 'm', 'Asley'); //Asley Avila ingresado: 11/3/21
 const Joelin = new USUARIO(50097873, 'f', 'Joelin'); //Joelin Ghan ingresada: 11/3/21
+const Melanie = new USUARIO(53120960, 'f', 'Melanie') // Melanie Sire ingresada: 16/3/21
 
-const arreglo = [Maira, Leandro, Arihana, Sergio, Natalia, Yaquelin, Juan, Asley, Joelin];
+const arreglo = [Maira, Leandro, Arihana, Sergio, Natalia, Yaquelin, Juan, Asley, Joelin, Melanie];
 
 /*******************************************/
 
