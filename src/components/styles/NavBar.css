@@ -1,6 +1,7 @@
 
 h2{
     font-size: 12px;
+    font-family: arial, helvetica, roboto, "new times roman", lato;
 }  
 a{
     text-decoration: none;
@@ -18,6 +19,7 @@ a{
     border-bottom: outset;
 }
 .logo{
+    width: 150px;
     margin-left: 15px;
 }
 .menu{
@@ -48,18 +50,18 @@ a{
 }
 @media screen and (max-width: 600px){
     h2{
-        font-family: 'Nanum Gothic', sans-serif;
         font-size: 10px;
-        font-weight: lighter;
     }
     .Header{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr; 
+        grid-template-rows: 100px 50px; 
         border: none;
     }
     .logo{
-        margin-top: 10px;
-        margin-left: calc(50% - 62px);
+        margin-left: 10%;
+        width: 80%;
+        /* margin-top: 10px;
+        margin-left: calc(50% - 62px); */
     }
     .menu{
         border: solid 1px red;

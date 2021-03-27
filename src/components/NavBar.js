@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./styles/NavBar.css";
-import logo from "./img/logo.png";
+import logo from "./img/logo3.png";
 // import logo from "./img/logo_chufles3.svg";
 
 class NavBar extends React.Component{
