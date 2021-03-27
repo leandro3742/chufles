@@ -7,6 +7,7 @@ import lista_profesional from '../components/img/lista_profesional.png';
 export default class Requisitos extends React.Component {
     render(){
         return(
+            <React.Fragment>
             <div className="Requisitos">
                 <span className="titulo Requisitos">
                 Requisitos para sacar tu licencia<br /> 
@@ -22,8 +23,10 @@ export default class Requisitos extends React.Component {
                 <div className="lista-contenedor">
                     <img className="lista" src={lista_profesional} alt="" />
                 </div>
-                <Footer />
             </div>
+            <Footer />
+            </React.Fragment>
+
         );
     }
 }
