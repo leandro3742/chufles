@@ -28,8 +28,9 @@ const Asley = new USUARIO(64540941, 'm', 'Asley'); //Asley Avila ingresado: 11/3
 const Joelin = new USUARIO(50097873, 'f', 'Joelin'); //Joelin Ghan ingresada: 11/3/21
 const Melanie = new USUARIO(53120960, 'f', 'Melanie'); // Melanie Sire ingresada: 16/3/21
 const Lucas = new USUARIO(55510199, 'm', 'Lucas'); //Lucas Blanco ingresado: 17/3/21
+const Facundo = new USUARIO(52939425, 'm', 'Facundo'); //Facundo Martinez ingresado: 16/6/21
 
-const arreglo = [Maira, Leandro, Arihana, Sergio, Natalia, Yaquelin, Juan, Asley, Joelin, Melanie, Lucas];
+const arreglo = [Maira, Leandro, Arihana, Sergio, Natalia, Yaquelin, Juan, Asley, Joelin, Melanie, Lucas, Facundo];
 
 /*******************************************/
 
